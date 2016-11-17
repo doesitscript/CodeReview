@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml">
+
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Get-PasswordLockoutPolicy</command:name>
+<command:verb>Get</command:verb>
+<command:noun>PasswordLockoutPolicy</command:noun>
+<maml:description><maml:para>Returns server password/lockout policy and lockout for a server
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Gets the server password/lockout policy for one or several servers. For times, a timespan object is returned. For non, time related fields, an integer is returned.
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Get-PasswordLockoutPolicy</maml:name>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none"><maml:name>ComputerName</maml:name>
+<maml:Description><maml:para>Name of a computer to get password policy and lockout policy
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi"><maml:name>WhatIf</maml:name>
+<maml:Description><maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.
+</maml:para>
+</maml:Description>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf"><maml:name>Confirm</maml:name>
+<maml:Description><maml:para>Prompts you for confirmation before running the cmdlet.
+</maml:para>
+</maml:Description>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none"><maml:name>ComputerName</maml:name>
+<maml:Description><maml:para>Name of a computer to get password policy and lockout policy
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="wi"><maml:name>WhatIf</maml:name>
+<maml:Description><maml:para>Shows what would happen if the cmdlet runs. The cmdlet is not run.
+</maml:para>
+</maml:Description>
+<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="cf"><maml:name>Confirm</maml:name>
+<maml:Description><maml:para>Prompts you for confirmation before running the cmdlet.
+</maml:para>
+</maml:Description>
+<command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+<dev:type><maml:name>SwitchParameter</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>False</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes></command:inputTypes>
+<command:returnValues></command:returnValues>
+<maml:alertSet><maml:alert><maml:para>None
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+<dev:code>Get-PasswordLockoutPolicy -ComputerName DC01</dev:code>
+<dev:remarks><maml:para>
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Send-PasswordCompliance</command:name>
+<command:verb>Send</command:verb>
+<command:noun>PasswordCompliance</command:noun>
+<maml:description><maml:para>Formats and Email with Password Audit of a Server or to the console in a pretty format.
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>For servers that are not in compliance with the password policies and lockout policies, will send an email with the names of the attributes that are out of compliance
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Send-PasswordCompliance</maml:name>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>To</maml:name>
+<maml:Description><maml:para>Recipient of the compliance results
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>SMTP</maml:name>
+<maml:Description><maml:para>SMTP Server used to send email
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>FailedComputers</maml:name>
+<maml:Description><maml:para>Custom object containing computers and their password compliance results
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>To</maml:name>
+<maml:Description><maml:para>Recipient of the compliance results
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>SMTP</maml:name>
+<maml:Description><maml:para>SMTP Server used to send email
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>FailedComputers</maml:name>
+<maml:Description><maml:para>Custom object containing computers and their password compliance results
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes></command:inputTypes>
+<command:returnValues></command:returnValues>
+<maml:alertSet><maml:alert><maml:para>Sends to console in a pretty format. To keep results in objects, use Test-PasswordAuditResults
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+<dev:code>Send-PasswordCompliance -To jerry.seinfeld@mycompany.com -CompObj $Comps -SMTP smtp.mycompany.com</dev:code>
+<dev:remarks><maml:para>
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+<command:details><command:name>Test-PasswordAuditResults</command:name>
+<command:verb>Test</command:verb>
+<command:noun>PasswordAuditResults</command:noun>
+<maml:description><maml:para>Audits Servers for password policy and sends results to email
+</maml:para>
+</maml:description>
+</command:details>
+<maml:description><maml:para>Compares password policy to password requirements of an organization. If any password requirement(s) does not match, they are sent to an output stream such as an email server, slack channel (future), reporting server (future).
+</maml:para>
+</maml:description>
+<command:syntax><command:syntaxItem><maml:name>Test-PasswordAuditResults</maml:name>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none"><maml:name>ComputerName</maml:name>
+<maml:Description><maml:para>Server to Audit
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassHistoryCount</maml:name>
+<maml:Description><maml:para>Password to remember before user can reuse a previous password
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassUnlockoutMins</maml:name>
+<maml:Description><maml:para>Number of minutes that a password will be unlocked after being locked
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>FailedLogonsAllowed</maml:name>
+<maml:Description><maml:para>Number of failed logon attempts allowed
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassLength</maml:name>
+<maml:Description><maml:para>Minimum Number of characters that a password has to be
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassMinAgeDays</maml:name>
+<maml:Description><maml:para>Minimum age of a password in days
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassMaxAgeDays</maml:name>
+<maml:Description><maml:para>Maximum age of a password in days
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>ObservationWindowMins</maml:name>
+<maml:Description><maml:para>lockOutObservationWindow
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:syntaxItem>
+</command:syntax>
+<command:parameters><command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName, ByValue)" position="1" aliases="none"><maml:name>ComputerName</maml:name>
+<maml:Description><maml:para>Server to Audit
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassHistoryCount</maml:name>
+<maml:Description><maml:para>Password to remember before user can reuse a previous password
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassUnlockoutMins</maml:name>
+<maml:Description><maml:para>Number of minutes that a password will be unlocked after being locked
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>FailedLogonsAllowed</maml:name>
+<maml:Description><maml:para>Number of failed logon attempts allowed
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassLength</maml:name>
+<maml:Description><maml:para>Minimum Number of characters that a password has to be
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassMinAgeDays</maml:name>
+<maml:Description><maml:para>Minimum age of a password in days
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>PassMaxAgeDays</maml:name>
+<maml:Description><maml:para>Maximum age of a password in days
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+<command:parameter required="true" variableLength="true" globbing="false" pipelineInput="True (ByPropertyName)" position="named" aliases="none"><maml:name>ObservationWindowMins</maml:name>
+<maml:Description><maml:para>lockOutObservationWindow
+</maml:para>
+</maml:Description>
+<command:parameterValue required="true" variableLength="false">Object</command:parameterValue>
+<dev:type><maml:name>Object</maml:name>
+<maml:uri /></dev:type>
+<dev:defaultValue>None</dev:defaultValue>
+</command:parameter>
+</command:parameters>
+<command:inputTypes></command:inputTypes>
+<command:returnValues></command:returnValues>
+<maml:alertSet><maml:alert><maml:para>
+</maml:para>
+</maml:alert>
+</maml:alertSet>
+<command:examples><command:example><maml:title>-------------------------- EXAMPLE 1 --------------------------</maml:title>
+<dev:code>$myargs = @{
+
+
+ComputerName          = "DSDC01","DSDC02" # array of computernames
+      PassHistoryCount      = 10                # Number of remembered passwords
+      PassUnlockoutMins     = 30                # Number of minutes before password is unlocked
+      FailedLogonsAllowed   = 4                 # Allowed Failed Logons
+      PassLength            = 15                # Required password length
+      PassMinAgeDays        = 4                 # Minimum age of password in days
+      PassMaxAgeDays        = 10                # Maximum age of password in days
+      ObservationWindowMins = 20                # Number of 
+   }
+   Test-PasswordAuditResults @myargs
+   Return compliance results of server DSDC01 and DSDC02</dev:code>
+<dev:remarks><maml:para>
+</maml:para>
+</dev:remarks>
+</command:example>
+</command:examples>
+<command:relatedLinks></command:relatedLinks>
+</command:command>
+</helpItems>
